@@ -31,6 +31,10 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
+            implementation("androidx.activity:activity-ktx:1.8.2")
+            implementation("androidx.compose.runtime:runtime-livedata:1.5.4") // To use observeAsState
+            implementation("androidx.fragment:fragment-ktx:1.6.2")
+            implementation(libs.navigation.compose)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
